@@ -1,0 +1,93 @@
+body {
+	font-family: "Roboto", sans-serif;
+	color: #212427;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.app--wrapper {
+	background: #0b2434;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.app--inner {
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	text-align: center;
+	padding: 20px;
+	background: #f5f5f5;
+	width: 600px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.app--title {
+	font-size: 2.5rem;
+}
+
+p {
+	font-size: 1.25rem;
+}
+
+.score--title {
+	font-size: 1.5rem;
+	margin-top: 20px;
+}
+
+.dice--container {
+	display: grid;
+	margin: 0 auto;
+	grid-template-rows: 70px 70px;
+	grid-template-columns: 70px 70px 70px 70px 70px;
+	gap: 20px;
+}
+
+.dice,
+.dice:disabled {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	box-shadow: 0px 3px 5px black;
+	border: none;
+	border-radius: 5px;
+	font-size: 2.5rem;
+	cursor: pointer;
+}
+
+.dice:disabled {
+	color: #bf9b30;
+}
+
+.roll--btn {
+	border: none;
+	border-radius: 5px;
+	padding: 20px 40px;
+	background: #5035ff;
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+}
+
+.roll--btn:hover {
+	background-color: #332594;
+	cursor: pointer;
+}
+
+.roll--btn:disabled,
+.roll--btn:disabled:hover {
+	background-color: darkgrey;
+}
